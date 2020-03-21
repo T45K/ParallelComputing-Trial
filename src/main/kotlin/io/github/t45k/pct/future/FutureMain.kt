@@ -17,6 +17,7 @@ import java.util.concurrent.Future
  *
  * ExecutorService#submit された瞬間から計算は始まる
  * Future#get で実行結果を返すまで待つ
+ * つまり，mainスレッドはブロックされる
  *
  * 引数は与えられない
  */
