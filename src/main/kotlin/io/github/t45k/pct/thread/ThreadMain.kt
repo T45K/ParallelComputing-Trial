@@ -2,7 +2,17 @@ package io.github.t45k.pct.thread
 
 import io.github.t45k.pct.sumAccumulation
 
-class Main {
+/**
+ * java.lang.Thread
+ *
+ * 実装した Runnable を引数にとる
+ * Thread#run で実行開始
+ * Thread#join で終了待ちが可能
+ * 論理コア数以上のスレッドを確保できる
+ *
+ * 実行するだけ，引数と返り値はない
+ */
+class ThreadMain {
     /**
      * 計算自体はマルチスレッドだが，実行が線形な例
      * イメージとしては
