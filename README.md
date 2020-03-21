@@ -2,6 +2,6 @@
 並列処理のトライアル
 
 - Thread
-- Future
-- ExecuterService
+- Future(ExecutorService)
 - Rx
+- coroutine
