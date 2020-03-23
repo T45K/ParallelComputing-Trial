@@ -132,4 +132,8 @@ class RxMain {
                 }
                 .blockingSubscribe { println(it) }
     }
+    /*
+    重い処理を別スレッドでやりたいとかだとFutureの方が良い？
+    Completable#andThen とかもあるらしい
+     */
 }
