@@ -3,7 +3,7 @@
  */
 package io.github.t45k.pct
 
-import io.github.t45k.pct.coroutine.Main
+import io.github.t45k.pct.coroutine.FileIOTrial
 
 class App {
     val greeting: String
@@ -13,5 +13,7 @@ class App {
 }
 
 fun main() {
-    Main().main()
+    val start = System.currentTimeMillis()
+    FileIOTrial.coroutine()
+    println(System.currentTimeMillis() - start)
 }
