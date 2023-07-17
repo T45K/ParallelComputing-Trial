@@ -28,6 +28,10 @@ dependencies {
     // Use RxKotlin
     implementation("io.reactivex.rxjava2:rxkotlin:2.4.0")
 
+    // Use coroutine
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.2")
+
+
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 

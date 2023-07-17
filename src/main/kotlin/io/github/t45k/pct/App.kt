@@ -3,6 +3,8 @@
  */
 package io.github.t45k.pct
 
+import io.github.t45k.pct.coroutine.Main
+
 class App {
     val greeting: String
         get() {
@@ -11,5 +13,5 @@ class App {
 }
 
 fun main() {
-    println(App().greeting)
+    Main().main()
 }
