@@ -5,14 +5,21 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
-fun main() = runBlocking { // this: CoroutineScope
+// Sequentially executes doWorld followed by "Done"
+fun main() = runBlocking {
     doWorld()
+    println("Done")
 }
 
-private suspend fun doWorld() = coroutineScope {
-    launch {
-        delay(1000L)
-        println("World! from " + Thread.currentThread().name)
+// Concurrently executes both sections
+suspend fun doWorld() = coroutineScope { // this: CoroutineScope
+    launch { // ここの launch と
+        delay(2000L)
+        println("World 2")
     }
-    println("Hello from " + Thread.currentThread().name)
+    launch { // ここの launch は並行に走る
+        delay(1000L)
+        println("World 1")
+    }
+    println("Hello")
 }
