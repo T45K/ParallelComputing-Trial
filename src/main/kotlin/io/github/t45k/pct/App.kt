@@ -11,5 +11,5 @@ class App {
 }
 
 fun main() {
-    io.github.t45k.pct.coroutine.doc.main()
+//    io.github.t45k.pct.coroutine.doc.main()
 }
